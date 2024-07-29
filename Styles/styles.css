@@ -1,4 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+
+    --first-color: #F3F5FC; 
+    --second-color: #0A3871;
+    --third-color: #D8DFE8;
+    --fourth-color: white;
+    --fifth-color: #343A40;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.application {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color:   var(--first-color);
+    flex:1;
+}
+
+.input {
+    padding: 40px 0px 0px 240px;
+}
+
+.input__logo {
+    margin-top: 40px;
+}
+
+.input__area__text {
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: transparent; 
+
+    font-size: 2em;
+    color: var(--second-color);
+
+    height: 480px;
+    width: 680px;
+
+}
+
+.input__area__interaction {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.input__area__interaction__description__info {
+    size: 1em;
+}
+.input__area__interaction__description {
+    display: flex;
+    gap: 1em;
+    font-size: 0.75em;
+    color: var(--fifth-color);
+}
+.input__area__interaction__buttons {
+    display: flex;
+    gap: 1.5em;
+}
+.input__area__interaction__buttons__button {
+    border: none;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    width: 328px;
+    color: var(--third-color);
+    background-color: var(--second-color);
+}
+
+
+.output {
+    width: 400px;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 2em;
+    background-color:   var(--fourth-color); 
+}
+.output__area {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.output__area__text {
+    text-align: center;
+    width: 80%;
+}
+
+.output__area__image {
+    align-self: center;
+    width: 336px;
+}
+
+.contact__link__logo {
+    height: 15px;
+}
+
+.contact {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    color: var(--fourth-color);
+    background-color: var(--second-color);
+}
+.contact__link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact__link:visited {
+    color: inherit;
+
 }
