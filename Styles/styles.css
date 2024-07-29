@@ -46,6 +46,7 @@ body {
     height: 480px;
     width: 680px;
 
+    caret-color: transparent;
 }
 
 .input__area__text::placeholder {
@@ -89,6 +90,7 @@ body {
 }
 .output__area {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,17 +98,40 @@ body {
     gap: 2em;
 }
 
+textarea {
+}
+
 .output__area__text {
     color: var(--fifth-color);
     width: 80%;
 }
+
 
 .output__area__text__message {
     text-align: center;
 }
 
 .output__area__text__result {
+    color: var(--fifth-color);
     font-size: 1.5em;
+}
+
+.output__area__result {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.output__area__result__copy {
+    align-self: center;
+    border: none;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    width: 100%;
+    color: var(--third-color);
+    background-color: var(--second-color);
 }
 
 .output__area__image {
