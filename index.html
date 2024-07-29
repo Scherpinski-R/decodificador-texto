@@ -8,16 +8,25 @@
 </head>
 <body>
     <main class="application">
-        <div class="input">
-            <textarea class="input__text"">Digite seu texto</textarea>
-            <div class="input__description">
-                <p>Apenas letras minúsculas e sem acento.</p>
-            </div>
-            <div class="input__buttons">
-                <button class="input__buttons__button">Criptografar</button>
-                <button class="input__buttons__button">Descriptografar</button>
+        <div class="left">
+            <img src="Assets/logo.png" alt="site logo" class="input__logo">
+            <div class="input">
+                <div class="input__area"> 
+                    <textarea class="input__area__text"" spellcheck="false">Digite seu texto</textarea>
+                    <div class="input__area__interaction">
+                        <div class="input__area__interaction__description">
+                            <img src="Assets/bi_exclamation-circle-fill.png" alt="Aviso ao usuario" class="input__area__interaction__description__info">
+                            <p>Apenas letras minúsculas e sem acento.</p>
+                        </div>
+                        <div class="input__area__interaction__buttons">
+                            <button class="input__area__interaction__buttons__button">Criptografar</button>
+                            <button class="input__area__interaction__buttons__button">Descriptografar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
         <div class="output">
             <div class="output__area">
                 <img src="Assets/High quality products 1 1.png" alt="Logo de um garoto com uma lupa desvendando o texto" class="output__area__image">
@@ -29,10 +38,10 @@
         </div>
     </main>
     <footer class="contact">
-        <p>Desenvolvido por 
+            <p>Desenvolvido por </p>
             <a href="http://www.github.com/scherpinski-r" target="_blank" class="contact__link">
-               <img src="Assets/github.png" alt="Logo Github" class="contact__link__logo">
-               <p class="contact__link__name">rsbrandao</p>
+                <img src="Assets/github.png" alt="Logo Github" class="contact__link__logo">
+                <p class="contact__link__name">rsbrandao</p>
             </a>
         </p>
     </footer>
