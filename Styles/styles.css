@@ -48,6 +48,10 @@ body {
 
 }
 
+.input__area__text::placeholder {
+    color: var(--second-color);
+}
+
 .input__area__interaction {
     display: flex;
     flex-direction: column;
@@ -93,8 +97,16 @@ body {
 }
 
 .output__area__text {
-    text-align: center;
+    color: var(--fifth-color);
     width: 80%;
+}
+
+.output__area__text__message {
+    text-align: center;
+}
+
+.output__area__text__result {
+    font-size: 1.5em;
 }
 
 .output__area__image {
