@@ -1,9 +1,25 @@
 function criptografar(data) {
-    return data;
+ 
+    var text = data
+                .replaceAll("e", "enter")
+                .replaceAll("i", "imes")
+                .replaceAll("a", "ai")
+                .replaceAll("o", "ober")
+                .replaceAll("u", "ufat")
+
+    return text;
 }
 
 function descriptografar(data) {
-    return data;
+
+    var text = data
+                .replaceAll("enter", "e")
+                .replaceAll("imes", "i")  
+                .replaceAll("ai", "a") 
+                .replaceAll("ober", "o") 
+                .replaceAll("ufat", "u")
+
+    return text;
 }
 
 
@@ -55,7 +71,9 @@ function resetaOutput() {
 
 function copiarResultado() {
 
-    // copia resultado
+    var output_text = document.querySelector(".output__area__result__text")?.innerHTML;
+    navigator.clipboard.writeText(output_text);
+
     resetaInput();
     resetaOutput();
 }
