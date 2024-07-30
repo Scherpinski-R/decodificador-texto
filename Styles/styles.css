@@ -98,9 +98,6 @@ body {
     gap: 2em;
 }
 
-textarea {
-}
-
 .output__area__text {
     color: var(--fifth-color);
     width: 80%;
