@@ -198,6 +198,7 @@ body {
     }
 
     .output__area__result {
+        word-wrap: break-word;
         gap: 20px;
     }
     .output__area__image {
