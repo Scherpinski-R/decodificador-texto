@@ -170,3 +170,34 @@ body {
     color: inherit;
 
 }
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .application {
+        flex-direction: column;
+    }
+
+    .input__logo {
+        margin: 73px 0 0 0; 
+        width: 120px;
+    }
+
+    .input__area__text {
+        padding-top: 116px;
+        height: 886px;
+    }
+
+    .input__buttons, .input__area {
+        padding: 0 40px 0 40px;
+    }
+    .output__area__result {
+        gap: 20px;
+    }
+    .output__area__image {
+        display: none;
+    }
+
+    .output {
+        width: auto;
+    }
+}
