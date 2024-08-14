@@ -82,14 +82,23 @@ body {
     gap: 1.5em;
 }
 .input__buttons__button {
-    border: none;
     border-radius: 1.5em;
     padding: 1.5em;
     width: 328px;
+}
+
+.input__buttons__criptografar {
+    border: none;
     color: var(--third-color);
     background-color: var(--second-color);
 }
 
+.input__buttons__descriptografar, .output__area__result__copy {
+    border: 1px;
+    border-style: solid;
+    color: var(--second-color);
+    background-color: transparent;
+}
 
 .output {
     width: 400px;
@@ -133,12 +142,9 @@ body {
 
 .output__area__result__copy {
     align-self: center;
-    border: none;
     border-radius: 1.5em;
     padding: 1.5em;
     width: 100%;
-    color: var(--third-color);
-    background-color: var(--second-color);
 }
 
 .output__area__image {
@@ -169,4 +175,58 @@ body {
 .contact__link:visited {
     color: inherit;
 
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .application {
+        flex-direction: column;
+    }
+
+    .input__logo {
+        margin: 73px 0 0 0; 
+        width: 120px;
+    }
+
+    .input__area__text {
+        padding-top: 116px;
+        height: 886px;
+    }
+
+    .input__buttons, .input__area {
+        padding: 0 40px 0 40px;
+    }
+
+    .output__area__result {
+        gap: 20px;
+    }
+    .output__area__image {
+        display: none;
+    }
+
+    .output {
+        width: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .input__area__text {
+        padding-top: 56px;
+        height: 251px;
+    }
+
+    .input__buttons {
+        flex-direction: column;
+    }
+
+    .input__logo {
+        margin-top: 20px;
+    }
+    .input__buttons, .input__area {
+        padding: 0 20px 0 20px;
+    }
+
+    .contact {
+        display: none;
+    }
 }
