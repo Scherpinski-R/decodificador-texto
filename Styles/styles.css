@@ -190,6 +190,7 @@ body {
     .input__buttons, .input__area {
         padding: 0 40px 0 40px;
     }
+
     .output__area__result {
         gap: 20px;
     }
@@ -199,5 +200,27 @@ body {
 
     .output {
         width: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .input__area__text {
+        padding-top: 56px;
+        height: 251px;
+    }
+
+    .input__buttons {
+        flex-direction: column;
+    }
+
+    .input__logo {
+        margin-top: 20px;
+    }
+    .input__buttons, .input__area {
+        padding: 0 20px 0 20px;
+    }
+
+    .contact {
+        display: none;
     }
 }
