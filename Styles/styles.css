@@ -209,10 +209,14 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 428px) {
     .input__area__text {
         padding-top: 56px;
         height: 251px;
+    }
+
+    .input__buttons__button {
+        width: auto;
     }
 
     .input__buttons {
