@@ -25,13 +25,23 @@ body {
     background-color:   var(--first-color);
     flex:1;
 }
-
 .input {
-    padding: 40px 0px 0px 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.input__area {
+    padding-top: 80px;
+}
+.input__buttons, .input__area {
+    padding-left: 240px;
 }
 
 .input__logo {
-    margin-top: 40px;
+    margin: 40px 0 0 40px;
+    width: 120px;
 }
 
 .input__area__text {
@@ -67,11 +77,11 @@ body {
     font-size: 0.75em;
     color: var(--fifth-color);
 }
-.input__area__interaction__buttons {
+.input__buttons {
     display: flex;
     gap: 1.5em;
 }
-.input__area__interaction__buttons__button {
+.input__buttons__button {
     border: none;
     border-radius: 1.5em;
     padding: 1.5em;

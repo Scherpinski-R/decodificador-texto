@@ -9,22 +9,21 @@
 </head>
 <body>
     <main class="application">
-        <div class="left">
+        <div class="input">
             <img src="Assets/logo.png" alt="site logo" class="input__logo">
-            <div class="input">
-                <div class="input__area"> 
-                    <textarea class="input__area__text" autofocus="true" spellcheck="false" placeholder="Digite seu texto"></textarea>
-                    <div class="input__area__interaction">
-                        <div class="input__area__interaction__description">
-                            <img src="Assets/bi_exclamation-circle-fill.png" alt="Aviso ao usuario" class="input__area__interaction__description__info">
-                            <p>Apenas letras minúsculas e sem acento.</p>
-                        </div>
-                        <div class="input__area__interaction__buttons">
-                            <button class="input__area__interaction__buttons__button" onclick="transformarTexto(criptografar)">Criptografar</button>
-                            <button class="input__area__interaction__buttons__button" onclick="transformarTexto(descriptografar)">Descriptografar</button>
-                        </div>
+            <div class="input__area"> 
+                <textarea class="input__area__text" autofocus="true" spellcheck="false" placeholder="Digite seu texto"></textarea>
+                <div class="input__area__interaction">
+                    <div class="input__area__interaction__description">
+                        <img src="Assets/bi_exclamation-circle-fill.png" alt="Aviso ao usuario" class="input__area__interaction__description__info">
+                        <p>Apenas letras minúsculas e sem acento.</p>
                     </div>
+                    
                 </div>
+            </div>
+            <div class="input__buttons">
+                <button class="input__buttons__button" onclick="transformarTexto(criptografar)">Criptografar</button>
+                <button class="input__buttons__button" onclick="transformarTexto(descriptografar)">Descriptografar</button>
             </div>
         </div>
         
