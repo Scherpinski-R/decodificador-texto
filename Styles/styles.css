@@ -138,6 +138,7 @@ body {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
+    word-wrap: break-word;
 }
 
 .output__area__result__copy {
@@ -198,8 +199,7 @@ body {
     }
 
     .output__area__result {
-        word-wrap: break-word;
-        gap: 20px;
+         gap: 20px;
     }
     .output__area__image {
         display: none;
